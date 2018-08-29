@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml"
+            style="-fx-background-color:  #f9ffbb;
+        -fx-border-width: 10; -fx-border-color: RoyalBlue">
+    <!--<bottom>-->
+    <!--<HBox spacing="10" alignment="CENTER">-->
+    <!--<Button text = "OK" style="-fx-background-color: rgba(216,0,0,0.79);-->
+    <!-- -fx-border-color: black" prefWidth="90"/>-->
+    <!--<Button text = "Cancel" style="-fx-background-color: White;-->
+    <!-- -fx-border-color: black" prefWidth="90"/>-->
+    <!--<Button text = "Help" style="-fx-background-color: rgba(28,46,185,0.77);-->
+    <!-- -fx-border-color: black" prefWidth="90"/>-->
+    <!--</HBox>-->
+    <!--</bottom>-->
+
+    <center>
+        <VBox style="-fx-border-color: Green" alignment="CENTER"/>
+        <!--<padding >-->
+        <!--<Insets right="10" bottom="10" />-->
+        <!--<Insets topRightBottomLeft="10" />-->
+        <!--</padding>-->
+        <Label style="-fx-border-color: Burgundy; -fx-border-width: 3"
+               BorderPane.alignment="CENTER">
+            This is the CENTER position label
+        </Label>
+
+        <!--<Button text = "OK" style="-fx-background-color: rgba(216,0,0,0.79);-->
+        <!-- -fx-border-color: black" prefWidth="90"/>-->
+        <!--<Button text = "Cancel" style="-fx-background-color: White;-->
+        <!-- -fx-border-color: black" prefWidth="90"/>-->
+        <!--<Button text = "Help" style="-fx-background-color: rgba(28,46,185,0.77);-->
+        <!-- -fx-border-color: black" prefWidth="90"/>-->
+        <!--</VBox>-->
+
+    </center>
+
+    <top>
+        <Label style="-fx-border-color: Burgundy; -fx-border-width: 3"
+               BorderPane.alignment="CENTER">
+            This is the top label
+        </Label>
+    </top>
+
+    <left>
+        <VBox style="-fx-border-color: Green" alignment="TOP_CENTER">
+            <padding >
+                <Insets right="10" bottom="10" />
+                <Insets topRightBottomLeft="10" />
+            </padding>
+            <Label style="-fx-border-color: Burgundy; -fx-border-width: 3"
+                   BorderPane.alignment="CENTER">
+                This is the LEFT label
+            </Label>
+            <Button text = "OK" style="-fx-background-color: rgba(216,0,0,0.79);
+          -fx-border-color: black" prefWidth="90"/>
+            <!--<Button text = "Cancel" style="-fx-background-color: White;-->
+            <!-- -fx-border-color: black" prefWidth="90"/>-->
+            <!--<Button text = "Help" style="-fx-background-color: rgba(28,46,185,0.77);-->
+            <!-- -fx-border-color: black" prefWidth="90"/>-->
+        </VBox>
+
+    </left>
+
+    <right>
+        <VBox style="-fx-border-color: Green" alignment="TOP_CENTER">
+            <padding >
+                <Insets right="10" bottom="10" />
+                <Insets topRightBottomLeft="10" />
+            </padding>
+            <Label style="-fx-border-color: Burgundy; -fx-border-width: 3"
+                   BorderPane.alignment="CENTER">
+                This is the RIGHT label
+            </Label>
+
+            <Button text = "OK" style="-fx-background-color: rgba(216,0,0,0.79);
+          -fx-border-color: black" prefWidth="90"/>
+            <!--<Button text = "Cancel" style="-fx-background-color: White;-->
+            <!-- -fx-border-color: black" prefWidth="90"/>-->
+            <!--<Button text = "Help" style="-fx-background-color: rgba(28,46,185,0.77);-->
+            <!-- -fx-border-color: black" prefWidth="90"/>-->
+        </VBox>
+
+    </right>
+</BorderPane>
