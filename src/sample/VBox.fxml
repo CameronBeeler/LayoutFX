@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+
+
+<VBox style="-fx-border-color: Green" alignment="TOP_LEFT">
+    <padding >
+        <Insets right="10" bottom="10" />
+        <Insets topRightBottomLeft="10" />
+    </padding>
+
+    <Button text = "OK" style="-fx-background-color: rgba(216,0,0,0.79);
+     -fx-border-color: black" prefWidth="90"/>
+    <Button text = "Cancel" style="-fx-background-color: White;
+     -fx-border-color: black" prefWidth="90"/>
+    <Button text = "Help" style="-fx-background-color: rgba(28,46,185,0.77);
+     -fx-border-color: black" prefWidth="90"/>
+</VBox>
