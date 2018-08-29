@@ -5,14 +5,72 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
-
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Box?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToggleButton?>
 <GridPane
         fx:controller="sample.Controller"
         xmlns:fx="http//javafx.com/fxml"
         alignment="CENTER"
-        gridLinesVisible="TRUE"
+        gridLinesVisible="false"
         hgap="15" vgap="15" >
-    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="Click Me"/>
+    <Button GridPane.rowIndex="0" GridPane.columnIndex="0" text="OK">
+        <font>
+            <Font name="Ariel" size="18"/>
+        </font>
+        <graphic>
+            <ImageView>
+                <!--<Image url = "@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>-->
+                <Image url="@/toolbarButtonGraphics/general/TipOfTheDay24.gif"/>
+            </ImageView>
+        </graphic>
+    </Button>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0" text="Yep!" textFill="blue" wrapText="true">
+        <font>
+            <Font name="Arial italic" size="14"/>
+        </font>
+        <graphic>
+            <ImageView>
+                <Image url="@/toolbarButtonGraphics/general/Information24.gif"/>
+            </ImageView>
+        </graphic>
+    </Label>
+    <fx:define>
+        <ToggleGroup fx:id="colorToggleGroup"/>
+    </fx:define>
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="1" text="My favorite color"/>
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="1">
+        <RadioButton text="Red" toggleGroup="$colorToggleGroup"/>
+        <RadioButton text="Blue" toggleGroup="$colorToggleGroup" selected="true"/>
+        <RadioButton text="Green" toggleGroup="$colorToggleGroup"/>
+    </VBox>
+
+    <Label GridPane.rowIndex="0" GridPane.columnIndex="2" text="My favorite pets"/>
+    <VBox GridPane.rowIndex="1" GridPane.columnIndex="2">
+        <CheckBox  text="Dogs" />
+        <CheckBox  text="Cats" />
+        <CheckBox  text="Chameleons"  selected="true"/>
+        <CheckBox  text="Parrots" />
+    </VBox>
+
+    <VBox GridPane.rowIndex="0" GridPane.columnIndex="3">
+        <ToggleButton text="On" selected="true"/>
+        <ToggleButton text="On" selected="true"/>
+        <ToggleButton text="On" selected="true"/>
+        <ToggleButton text="On" selected="true"/>
+
+    </VBox>
+
 
 </GridPane>
 
